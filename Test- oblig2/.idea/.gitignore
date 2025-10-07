@@ -1,0 +1,21 @@
+public class World {
+    private boolean isRaining;
+    private int day; // 1 = Mandag, ..., 7 = Søndag
+
+    public World(int day, boolean isRaining) {
+        this.day = day;
+        this.isRaining = isRaining;
+    }
+
+    public boolean isSunday() {
+        return day % 7 == 0;
+    }
+
+    public boolean getIsRaining() {
+        return isRaining;
+    }
+
+    public int getDay() {
+        return day;
+    }
+}
